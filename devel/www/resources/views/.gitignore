@@ -8,4 +8,4 @@
 # !application/language/gr/
 
 vendor/
-#!vendor/language/gr/
+!vendor/
