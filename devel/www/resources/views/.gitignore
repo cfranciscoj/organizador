@@ -1,0 +1,8 @@
+# you can skip this first one if it is not already excluded by prior patterns
+!vendor/
+
+vendor/*
+# !application/language/
+
+# application/language/*
+# !application/language/gr/
