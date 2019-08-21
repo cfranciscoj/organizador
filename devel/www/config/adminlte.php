@@ -115,7 +115,7 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Pages',
+            'text'        => 'P',
             'url'         => 'admin/pages',
             'icon'        => 'file',
             'label'       => 4,
@@ -123,8 +123,8 @@ return [
         ],
         'ACCOUNT SETTINGS',
         [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
+            'text' => 'Perfiles',
+            'url'  => '/admin/usuario/perfiles',
             'icon' => 'user',
         ],
         [
