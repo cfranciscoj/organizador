@@ -3,7 +3,9 @@
 namespace Org\Http\Controllers\Admin\Usuario;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Org\Http\Controllers\Controller;
+use Org\AdminPerfil as Perfil;
 
 class PerfilesController extends Controller
 {
@@ -26,7 +28,13 @@ class PerfilesController extends Controller
      */
     public function index()
     {
-        return view('admin/usuario/perfiles');
+      //if (Auth::user()->hasRole('admin')) {
+        $Perfil = new Perfil;
+        $Roles = $Perfil->TraeRol();
+        return view('admin/usuario/perfiles')->with(['Roles'=>$Roles]);
+      //} else {
+      //  return view('home');
+      //}
     }
 
 }
