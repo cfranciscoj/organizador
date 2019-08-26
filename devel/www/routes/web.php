@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin/usuario/perfiles', 'Admin\Usuario\PerfilesController@index')->name('perfilesadmin');
+Route::get('/admin/perfiles/agregar', 'Admin\Usuario\PerfilesController@agregar')->name('adduser');
+Route::get('/admin/perfiles/modificar', 'Admin\Usuario\PerfilesController@modificar')->name('moduser');

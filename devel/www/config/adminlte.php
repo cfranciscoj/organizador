@@ -122,7 +122,7 @@ return [
             'label_color' => 'success',
         ],
         'ACCOUNT SETTINGS',
-        [
+        /*[
             'text' => 'Perfiles',
             'url'  => '/admin/usuario/perfiles',
             'icon' => 'user',
@@ -131,57 +131,22 @@ return [
             'text' => 'Change Password',
             'url'  => 'admin/settings',
             'icon' => 'lock',
-        ],
+        ],*/
         [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
+            'text'    => 'Perfiles',
+            'icon'    => 'user',
             'submenu' => [
                 [
-                    'text' => 'Level One',
-                    'url'  => '#',
+                    'text' => 'Agregar usuario',
+                    'url'  => '/admin/perfiles/agregar',
+                    'icon' => 'plus-circle',
                 ],
                 [
-                    'text'    => 'Level One',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
+                    'text' => 'Modificar usuario',
+                    'url'  => '/admin/perfiles/modificar',
+                    'icon' => 'wrench',
                 ],
             ],
-        ],
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
-        ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
         ],
     ],
 

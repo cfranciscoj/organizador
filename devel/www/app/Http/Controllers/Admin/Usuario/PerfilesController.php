@@ -31,7 +31,28 @@ class PerfilesController extends Controller
       //if (Auth::user()->hasRole('admin')) {
         $Perfil = new Perfil;
         $Roles = $Perfil->TraeRol();
-        return view('admin/usuario/perfiles')->with(['Roles'=>$Roles]);
+        return view('admin/perfiles/agregar')->with(['Roles'=>$Roles]);
+      //} else {
+      //  return view('home');
+      //}
+    }
+
+    public function agregar()
+    {
+      //if (Auth::user()->hasRole('admin')) {
+        $Perfil = new Perfil;
+        $Roles = $Perfil->TraeRol();
+        return view('admin/perfiles/agregar')->with(['Roles'=>$Roles]);
+      //} else {
+      //  return view('home');
+      //}
+    }
+
+    public function modificar()
+    {
+      //if (Auth::user()->hasRole('admin')) {
+
+        return view('admin/perfiles/modificar');
       //} else {
       //  return view('home');
       //}
