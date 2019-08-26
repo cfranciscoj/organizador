@@ -91,7 +91,7 @@
 @section('css')
   <link href="{{ asset('plugins/jquery-ui-1.12.1/jquery-ui.min.css') }}" rel="stylesheet">
   <link href="{{ asset('plugins/datatables/datatables.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('plugins/select2/dist/css/select2.min.css') }}" rel="stylesheet">
+
 
 @stop
 
@@ -99,6 +99,5 @@
 @section('js')
   <script src="{{ asset('plugins/datatables/datatables.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('plugins/jquery-ui-1.12.1/jquery-ui.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('plugins/select2/dist/js/select2.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('js/organizador/comun/select2.js') }}" type="text/javascript"></script>
+
 @stop
