@@ -4,6 +4,8 @@ namespace Org\Http\Controllers\Admin\Usuario;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Yajra\Datatables\DataTables;
+use Yajra\DataTables\DataTablesServiceProvider;
 use Org\Http\Controllers\Controller;
 use Org\AdminPerfil as Perfil;
 
@@ -57,5 +59,13 @@ class PerfilesController extends Controller
       //  return view('home');
       //}
     }
+
+    public function listausr()
+    {
+      $Perfil = new Perfil;
+      $UsuariosRol = $Perfil->TraeUsuarioRol();
+      return DataTables::of($UsuariosRol)->make(true);
+    }
+
 
 }

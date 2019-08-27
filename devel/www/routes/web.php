@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin/perfiles/agregar', 'Admin\Usuario\PerfilesController@agregar')->name('adduser');
 Route::get('/admin/perfiles/modificar', 'Admin\Usuario\PerfilesController@modificar')->name('moduser');
+
+Route::post('/admin/perfiles/listausr', 'Admin\Usuario\PerfilesController@listausr')->name('getuser');
+Route::get('/admin/perfiles/listausr', 'Admin\Usuario\PerfilesController@listausr')->name('getuser');
